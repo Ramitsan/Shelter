@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4C4C4C;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn {
+  border: 1px solid transparent;
+  vertical-align: middle;
+}
+
+.btn--rose {
+  background: #F1CDB3;
+  border-radius: 100px;
+  padding: 15px 45px;
+  font-family: "Georgia", Times New Roman, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 6%;
+  color: #292929;
+}
+
+.first-screen {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.page-header {
+  padding-top: 60px;
+}
+
+.page-header__wrapper,
+.promo-block__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo__link {
+  display: inline-block;
+  font-family: "Georgia", Times New Roman, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 6%;
+  color: #F1CDB3;
+}
+
+.logo__info {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 10%;
+  color: #FFFFFF;
+}
+
+.main-nav {
+  width: 445px;
+}
+
+.main-nav__list {
+  width: 100%;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__link {
+  display: inline-block;
+  color: #FAFAFA;
+}
+
+.main-nav__link--active {
+  border-bottom: 3px solid #F1CDB3;
+}
+
+.promo-block__wrapper {
+  align-items: flex-end;
+}
+
+.promo-block__info {
+  padding-top: 230px;
+  padding-bottom: 240px;
+}
+
+.promo-block__slogan {
+  width: 310px;
+  padding-bottom: 49px;
+  font-family: "Georgia", Times New Roman, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.promo-block__text {
+  width: 460px;
+  margin-bottom: 40px;
+  color: #CDCDCD;
+}
+
+.promo-block__image {
+  margin-bottom: -7px;
+}
