@@ -65,7 +65,9 @@ img {
 }
 
 .page-header__wrapper,
-.promo-block__wrapper {
+.promo-block__wrapper,
+.about__wrapper,
+.our-friends__wrapper {
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -142,4 +144,38 @@ img {
 
 .promo-block__image {
   margin-bottom: -7px;
+}
+
+.about {
+  padding-top: 95px;
+  padding-bottom: 100px;
+}
+
+.about__wrapper {
+  justify-content: center;
+}
+
+.about__right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  width: 300px;
+  font-family: "Georgia", Times New Roman, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 6%;
+  color: #545454;
+}
+
+.about__right-block {
+  margin-left: 120px;
+}
+
+.about__text {
+  width: 430px;
 }
