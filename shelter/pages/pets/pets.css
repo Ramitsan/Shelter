@@ -1,0 +1,62 @@
+.page-header--inner {
+  background-color: #fff;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+.logo__link--inner {
+  color: #545454;
+}
+
+.logo__info--inner {
+  color: #292929;
+}
+
+.main-nav__link--inner {
+  color: #545454;
+}
+
+.our-friends__list--inner {
+  width: 100%;
+}
+
+.pagination {
+  width: 340px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination__item {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Georgia", Times New Roman, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+
+.pagination__item--disabled {
+  background-color: transparent;
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  cursor: text;
+}
+
+.pagination__item--current {
+  background-color: #F1CDB3;
+}
+
+.pagination__item--active {
+  background-color: transparent;
+  border: 2px solid #F1CDB3;
+}
