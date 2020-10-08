@@ -1,4 +1,6 @@
 .page-header--inner {
+  padding-top: 31px;
+  padding-bottom: 16px;
   background-color: #fff;
   position: sticky;
   z-index: 100;
@@ -10,7 +12,12 @@
 }
 
 .logo__info--inner {
+  padding-left: 4px;
   color: #292929;
+}
+
+.main-nav__list--inner {
+  margin-top: 14px;
 }
 
 .main-nav__link--inner {
@@ -21,8 +28,13 @@
   width: 100%;
 }
 
+.our-friends__item--inner {
+  margin-bottom: 29px;
+}
+
 .pagination {
   width: 340px;
+  margin-top: 31px;
   display: flex;
   flex-direction: row;
   align-items: center;
