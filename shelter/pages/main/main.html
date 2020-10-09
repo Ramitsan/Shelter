@@ -19,6 +19,11 @@
         </div>
         <h1 class="visually-hidden">Cozy House</h1>
         <nav class="page-header__nav main-nav">
+          <div class="page-header__toggle">
+            <button class="btn page-header__btn main-nav__toggle" type="button">
+			  <span class="visually-hidden">Открыть меню</span>
+			</button>
+          </div>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--active" href="#">About the shelter</a>
@@ -49,7 +54,7 @@
         </div>
         <div class="promo-block__image">
           <picture>
-
+            <source media="(max-width: 767px)" srcset="../../assets/images/start-screen-puppy-mobile.png">
             <source media="(max-width: 1279px)" srcset="../../assets/images/start-screen-puppy-tablet.png">
             <img src="../../assets/images/start-screen-puppy.png" alt="">
           </picture>
@@ -60,7 +65,10 @@
   <main>
     <section class="about">
       <div class="about__wrapper">
-        <img class="about__img" src="../../assets/images/about-pets.png" width="300" height="408" alt="Dog and cat">
+        <picture>
+          <source media="(max-width: 767px)" srcset="../../assets/images/about-pets-mobile.png">
+          <img class="about__img" src="../../assets/images/about-pets.png" width="300" height="408" alt="Dog and cat">
+        </picture>
         <div class="about__right-block">
           <h2 class="about__title">About the shelter “Cozy House”</h2>
           <div class="about__info">
@@ -103,39 +111,67 @@
         <h2 class="help__title">How you can help our shelter</h2>
         <ul class="help__list">
           <li class="help__item" tabindex="0">
-            <img src="../../assets/icons/icon-pet-food.png" width="60" height="auto" alt="Pet food">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../../assets/icons/icon-pet-food-mobile.png">
+              <img src="../../assets/icons/icon-pet-food.png" alt="Pet food">
+            </picture>
+
             <p>Pet food</p>
           </li>
           <li class="help__item" tabindex="0">
-            <img src="../../assets/icons/icon-transportation.png" width="61" height="auto" alt="Transportation">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../../assets/icons/icon-transportation-mobile.png">
+              <img src="../../assets/icons/icon-transportation.png" alt="Transportation">
+            </picture>
             <p>Transportation</p>
           </li>
           <li class="help__item" tabindex="0">
-            <img src="../../assets/icons/icon-toys.png" width="60" height="auto" alt="Toys">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../../assets/icons/icon-toys-mobile.png">
+              <img src="../../assets/icons/icon-toys.png" alt="Toys">
+            </picture>
             <p>Toys</p>
           </li>
           <li class="help__item" tabindex="0">
-            <img src="../../assets/icons/icon-bowls-and-cups.png" width="60" height="auto" alt="Bowls and cups">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../../assets/icons/icon-bowls-and-cups-mobile.png">
+              <img src="../../assets/icons/icon-bowls-and-cups.png" alt="Bowls and cups">
+            </picture>
             <p>Bowls and cups</p>
           </li>
           <li class="help__item" tabindex="0">
-            <img src="../../assets/icons/icon-shampoos.png" width="60" height="auto" alt="Shampoos">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../../assets/icons/icon-shampoos-mobile.png">
+              <img src="../../assets/icons/icon-shampoos.png" alt="Shampoos">
+            </picture>
             <p>Shampoos</p>
           </li>
           <li class="help__item" tabindex="0">
-            <img src="../../assets/icons/icon-vitamins.png" width="60" height="auto" alt="Vitamins">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../../assets/icons/icon-vitamins-mobile.png">
+              <img src="../../assets/icons/icon-vitamins.png" width="60" height="auto" alt="Vitamins">
+            </picture>
             <p>Vitamins</p>
           </li>
           <li class="help__item" tabindex="0">
-            <img src="../../assets//icons/icon-medicines.png" width="60" height="auto" alt="Medicines">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../../assets//icons/icon-medicines-mobile.png">
+              <img src="../../assets//icons/icon-medicines.png" width="60" height="auto" alt="Medicines">
+            </picture>
             <p>Medicines</p>
           </li>
           <li class="help__item" tabindex="0">
-            <img src="../../assets/icons/icon-collars-leashes.png" width="60" height="auto" alt="Collars / leashes">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../../assets/icons/icon-collars-leashes-mobile.png">
+              <img src="../../assets/icons/icon-collars-leashes.png" alt="Collars / leashes">
+            </picture>
             <p>Collars / leashes</p>
           </li>
           <li class="help__item" tabindex="0">
-            <img src="../../assets//icons/icon-sleeping-area.png" width="60" height="auto" alt="Sleeping area">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../../assets//icons/icon-sleeping-area-mobile.png">
+              <img src="../../assets//icons/icon-sleeping-area.png" alt="Sleeping area">
+            </picture>
             <p>Sleeping areas</p>
           </li>
         </ul>
@@ -143,7 +179,11 @@
     </section>
     <section class="donation">
       <div class="donation__wrapper">
-        <img class="donation__img" src="../../assets/images/donation-dog.png" width="505" height="261" alt="little nice puppy">
+        <picture>
+          <source media="(max-width: 767px)" srcset="../../assets/images/donation-dog-mobile.png">
+          <img class="donation__img" src="../../assets/images/donation-dog.png" alt="little nice puppy">
+        </picture>
+
         <div class="donation__info">
           <h2 class="donation__title">
             You can also make a donation

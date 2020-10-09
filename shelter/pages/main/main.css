@@ -103,6 +103,7 @@ img {
 
 .main-nav {
   width: 445px;
+  position: relative;
 }
 
 .main-nav__list {
@@ -156,11 +157,13 @@ img {
   margin-top: 47px;
   display: flex;
   flex-direction: column;
+  line-height: 0;
 }
 
 .promo-block__image img {
   width: 698px;
   height: 728px;
+  display: block;
 }
 
 .about {
@@ -223,7 +226,7 @@ h2 {
 }
 
 .our-friends__title {
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
   padding-bottom: 60px;
   text-align: center;
@@ -617,7 +620,6 @@ page-footer__wrapper {
     margin-top: 100px;
   }
   .promo-block__image img {
-    display: block;
     width: 569px;
     height: 593px;
     margin: 0;
@@ -633,7 +635,7 @@ page-footer__wrapper {
   .about__text {
     width: 435px;
   }
-  .about__img {
+  .about__wrapper picture {
     order: 2;
     margin-top: 66px;
   }
@@ -675,7 +677,7 @@ page-footer__wrapper {
     order: 1;
     padding-right: 23px;
   }
-  .donation__img {
+  .donation__wrapper picture {
     order: 2;
     margin-right: 0px;
     margin-top: 47px;
@@ -721,5 +723,193 @@ page-footer__wrapper {
   }
   .page-footer__puppy {
     margin-top: 69px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header__wrapper,
+  .promo-block__wrapper,
+  .about__wrapper,
+  .our-friends__wrapper,
+  .help__wrapper,
+  .donation__wrapper,
+  .page-footer__wrapper {
+    padding: 0px 10px;
+  }
+  .logo__info {
+    margin-top: 11px;
+    margin-left: 4px;
+  }
+  .main-nav {
+    width: 100px;
+    /*пока условно*/
+  }
+  .main-nav__toggle {
+    background-color: transparent;
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    top: -3px;
+    right: 27px;
+    z-index: 2;
+    cursor: pointer;
+    padding: 0;
+  }
+  .main-nav__toggle::before {
+    content: "";
+    background-image: url("../../assets/icons/burger-menu-mobile.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1px;
+    left: -2px;
+    width: 30px;
+    height: 22px;
+  }
+  .main-nav__list {
+    display: none;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .promo-block__info {
+    margin-top: 46px;
+  }
+  .promo-block__slogan {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.06em;
+  }
+  .promo-block__text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 43px;
+  }
+  .promo-block__image {
+    margin-top: 105px;
+  }
+  .promo-block__image img {
+    width: 260px;
+    height: 272px;
+  }
+  .about {
+    padding-top: 21px;
+    padding-bottom: 35px;
+  }
+  .about__right-block {
+    align-items: center;
+    margin-left: 0px;
+  }
+  .about__title {
+    width: 225px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .about__text {
+    width: 100%;
+    padding: 0 15px;
+    text-align: justify;
+  }
+  .about__text--one {
+    margin-bottom: 22px;
+  }
+  .about__wrapper picture {
+    margin-top: 15px;
+  }
+  .about__img {
+    width: 260px;
+    height: 354px;
+  }
+  .our-friends {
+    padding-top: 42px;
+    padding-bottom: 41px;
+  }
+  .our-friends__title {
+    padding-bottom: 42px;
+  }
+  .our-friends__list {
+    width: 100%;
+    justify-content: center;
+  }
+  .our-friends__item {
+    margin-right: 0px;
+    margin-bottom: 21px;
+  }
+  .our-friends__item:nth-child(2) {
+    display: none;
+  }
+  .our-friends__name {
+    margin-top: 24px;
+  }
+  .our-friends__learn-more {
+    padding: 13px 42px;
+  }
+  .our-friends__buttons {
+    width: 245px;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 41px;
+  }
+  .help {
+    padding-top: 42px;
+    padding-bottom: 23px;
+  }
+  .help__title {
+    width: 225px;
+    margin-bottom: 26px;
+  }
+  .help__list {
+    padding: 0 5px;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+  .help__item {
+    width: 130px;
+    margin: 0px;
+    padding-top: 23px;
+  }
+  .help__item:first-child,
+  .help__item:nth-child(3),
+  .help__item:nth-child(5),
+  .help__item:nth-child(6),
+  .help__item:nth-child(7),
+  .help__item:nth-child(8),
+  .help__item:nth-child(9) {
+    margin-left: 0px;
+  }
+  .help__item p {
+    font-size: 15px;
+    line-height: 110%;
+    margin-top: 12px;
+    margin-bottom: 3px;
+  }
+  .donation {
+    padding-top: 20px;
+  }
+  .donation__info {
+    padding-right: 0px;
+    align-items: center;
+  }
+  .donation__title {
+    text-align: center;
+  }
+  .donation__subtitle {
+    font-size: 15px;
+  }
+  .donation__number {
+    font-size: 15px;
+    line-height: 110%;
+  }
+  .donation__text {
+    width: 100%;
+    padding: 0 10px;
+    text-align: justify;
+  }
+  .page-footer__wrapper {
+    flex-direction: column;
+  }
+  .page-footer__questions,
+  .page-footer__visit {
+    width: 100%;
   }
 }
