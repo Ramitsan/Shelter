@@ -101,6 +101,10 @@ img {
   color: #FFFFFF;
 }
 
+.page-header__toggle {
+  display: none;
+}
+
 .main-nav {
   width: 445px;
   position: relative;
@@ -167,8 +171,8 @@ img {
 }
 
 .about {
-  padding-top: 67px;
-  padding-bottom: 99px;
+  padding-top: 69px;
+  padding-bottom: 93px;
 }
 
 .about__wrapper {
@@ -197,6 +201,7 @@ h2 {
 
 .about__title {
   width: 320px;
+  margin-top: 19px;
   margin-bottom: 23px;
 }
 
@@ -321,7 +326,7 @@ h2 {
 
 .help {
   padding-top: 79px;
-  padding-bottom: 45px;
+  padding-bottom: 47px;
 }
 
 .help__wrapper {
@@ -343,12 +348,14 @@ h2 {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
+  align-content: stretch;
 }
 
 .help__item {
   width: 170px;
   text-align: center;
-  margin: 0px 30px;
+  margin: 0px 35px;
   margin-bottom: 18px;
   padding-top: 15px;
   display: flex;
@@ -357,36 +364,28 @@ h2 {
   align-items: center;
 }
 
-.help__item:first-child {
-  margin-left: 15px;
-}
-
 .help__item:nth-child(3) {
   margin-left: 25px;
 }
 
-.help__item:nth-child(5) {
-  margin-left: 40px;
-}
-
 .help__item:nth-child(6) {
-  margin-left: -30px;
+  margin-left: 17px;
 }
 
 .help__item:nth-child(7) {
-  margin-left: 16px;
+  margin-left: 10px;
 }
 
 .help__item:nth-child(8) {
-  margin-left: 55px;
+  margin-left: 40px;
 }
 
 .help__item:nth-child(9) {
-  margin-left: 37px;
+  margin-left: 87px;
 }
 
 .help__item p {
-  margin-top: 30px;
+  margin-top: 24px;
   font-family: "Georgia", Times New Roman, serif;
   font-style: normal;
   font-weight: normal;
@@ -397,7 +396,7 @@ h2 {
 }
 
 .donation {
-  padding-top: 52px;
+  padding-top: 54px;
   padding-bottom: 87px;
   background-color: #F6F6F6;
 }
@@ -421,6 +420,7 @@ h2 {
 
 .donation__title {
   width: 300px;
+  margin-top: 27px;
   margin-bottom: 0px;
 }
 
@@ -471,7 +471,7 @@ h2 {
 }
 
 .page-footer {
-  padding-top: 38px;
+  padding-top: 40px;
   padding-bottom: 50px;
   background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
@@ -482,7 +482,9 @@ page-footer__wrapper {
 
 .page-footer__questions {
   width: 278px;
-  margin-right: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .page-footer__title {
@@ -502,7 +504,7 @@ page-footer__wrapper {
 }
 
 .page-footer__title--visit {
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 }
 
 .page-footer__link {
@@ -520,7 +522,7 @@ page-footer__wrapper {
 }
 
 .page-footer__link--email {
-  margin-bottom: 45px;
+  margin-bottom: 48px;
 }
 
 .page-footer__link--email::before {
@@ -543,8 +545,14 @@ page-footer__wrapper {
   background-image: url("../../assets/icons/icon-phone.png");
 }
 
+.page-footer__visit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .page-footer__link--boston {
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 
 .page-footer__link--boston,
@@ -565,11 +573,12 @@ page-footer__wrapper {
 }
 
 .page-footer__link--boston::before {
-  top: 9px;
+  top: 6px;
 }
 
 .page-footer__puppy {
   margin-bottom: -50px;
+  display: block;
 }
 
 @media (max-width: 1279px) {
@@ -597,7 +606,8 @@ page-footer__wrapper {
     margin-top: 30px;
   }
   .logo__info {
-    margin-top: 9px;
+    margin-top: 10px;
+    margin-left: 3px;
   }
   .page-header__nav {
     margin-top: -2px;
@@ -625,19 +635,25 @@ page-footer__wrapper {
     margin: 0;
   }
   .about {
-    padding-top: 52px;
-    padding-bottom: 100px;
+    padding-top: 61px;
+    padding-bottom: 94px;
+  }
+  .about__img {
+    margin-top: 0px;
   }
   .about__right-block {
     order: 1;
-    margin-left: -6px;
+    /* margin-left: -6px; */
   }
   .about__text {
-    width: 435px;
+    width: 432px;
   }
   .about__wrapper picture {
     order: 2;
     margin-top: 66px;
+  }
+  .our-friends {
+    padding-top: 80px;
   }
   .our-friends__list {
     width: 580px;
@@ -657,25 +673,36 @@ page-footer__wrapper {
     width: 100%;
     padding: 0 30px;
   }
+  .help {
+    padding-top: 80px;
+    padding-bottom: 44px;
+  }
   .help__item {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+    margin-left: 30px;
   }
   .help__item:first-child,
   .help__item:nth-child(3),
-  .help__item:nth-child(5),
   .help__item:nth-child(6),
   .help__item:nth-child(7),
   .help__item:nth-child(8),
   .help__item:nth-child(9) {
     margin-left: 30px;
   }
+  .help__item p {
+    margin-top: 22px;
+  }
   .donation {
-    padding-top: 52px;
-    padding-bottom: 100px;
+    padding-top: 54px;
+    padding-bottom: 93px;
   }
   .donation__info {
     order: 1;
     padding-right: 23px;
+  }
+  .donation__img {
+    margin-top: 0px;
+    margin-right: 4px;
   }
   .donation__wrapper picture {
     order: 2;
@@ -696,23 +723,25 @@ page-footer__wrapper {
   .page-footer__visit {
     width: 48%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
   }
   .page-footer__title--questions {
     margin-bottom: 44px;
     margin-top: 4px;
   }
+  .page-footer__title--visit {
+    margin-bottom: 32px;
+  }
   .page-footer__link--boston {
     margin-bottom: 33px;
   }
   .page-footer__link--boston::before {
-    top: 6px;
+    top: 8px;
     left: -2px;
   }
   .page-footer__link--london {
     padding-left: 42px;
+    margin-top: 6px;
   }
   .page-footer__link--london::before {
     top: -5px;
@@ -744,6 +773,9 @@ page-footer__wrapper {
     width: 100px;
     /*пока условно*/
   }
+  .page-header__toggle {
+    display: block;
+  }
   .main-nav__toggle {
     background-color: transparent;
     width: 45px;
@@ -773,9 +805,10 @@ page-footer__wrapper {
   }
   .promo-block__info {
     margin-top: 46px;
+    align-items: center;
   }
   .promo-block__slogan {
-    width: 100%;
+    width: 75%;
     text-align: center;
     font-size: 25px;
     letter-spacing: 0.06em;
@@ -793,7 +826,7 @@ page-footer__wrapper {
     height: 272px;
   }
   .about {
-    padding-top: 21px;
+    padding-top: 23px;
     padding-bottom: 35px;
   }
   .about__right-block {
@@ -819,6 +852,7 @@ page-footer__wrapper {
   .about__img {
     width: 260px;
     height: 354px;
+    margin-top: 10px;
   }
   .our-friends {
     padding-top: 42px;
@@ -842,7 +876,7 @@ page-footer__wrapper {
     margin-top: 24px;
   }
   .our-friends__learn-more {
-    padding: 13px 42px;
+    padding: 14px 42px;
   }
   .our-friends__buttons {
     width: 245px;
@@ -852,7 +886,7 @@ page-footer__wrapper {
   }
   .help {
     padding-top: 42px;
-    padding-bottom: 23px;
+    padding-bottom: 13px;
   }
   .help__title {
     width: 225px;
@@ -865,8 +899,10 @@ page-footer__wrapper {
   }
   .help__item {
     width: 130px;
-    margin: 0px;
-    padding-top: 23px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 13px;
+    padding-top: 16px;
   }
   .help__item:first-child,
   .help__item:nth-child(3),
@@ -884,21 +920,34 @@ page-footer__wrapper {
     margin-bottom: 3px;
   }
   .donation {
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 34px;
+  }
+  .donation__wrapper picture {
+    margin-right: -3px;
+    margin-top: 30px;
   }
   .donation__info {
     padding-right: 0px;
     align-items: center;
   }
   .donation__title {
+    width: 220px;
     text-align: center;
   }
   .donation__subtitle {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0;
   }
   .donation__number {
     font-size: 15px;
     line-height: 110%;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
   .donation__text {
     width: 100%;
@@ -908,8 +957,40 @@ page-footer__wrapper {
   .page-footer__wrapper {
     flex-direction: column;
   }
+  .page-footer__title {
+    font-size: 25px;
+  }
   .page-footer__questions,
   .page-footer__visit {
     width: 100%;
+    text-align: center;
+  }
+  .page-footer__questions {
+    margin-bottom: 44px;
+  }
+  .page-footer__link--email::before {
+    left: 24px;
+  }
+  .page-footer__link--phone::before {
+    left: 30px;
+  }
+  .page-footer__title--visit {
+    width: 285px;
+    margin-bottom: 39px;
+  }
+  .page-footer__link--boston,
+  .page-footer__link--london {
+    text-align: left;
+    padding-left: 41px;
+  }
+  .page-footer__link--boston {
+    margin-bottom: 38px;
+  }
+  .page-footer__link--boston::before,
+  .page-footer__link--london::before {
+    left: 0;
+  }
+  .page-footer__puppy {
+    margin-top: 45px;
   }
 }
