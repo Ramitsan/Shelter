@@ -55,6 +55,17 @@ img {
   color: #292929;
 }
 
+.btn--rose:focus,
+.btn--rose:hover {
+  background: #FDDCC4;
+}
+
+.btn--rose-border:focus,
+.btn--rose-border:hover {
+  border: 2px solid #FDDCC4;
+  background-color: #FDDCC4;
+}
+
 .first-screen {
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
@@ -130,6 +141,10 @@ img {
 .main-nav__link--active {
   padding-bottom: 1px;
   border-bottom: 3px solid #F1CDB3;
+}
+
+.main-nav__link--inactive {
+  cursor: default;
 }
 
 .promo-block__wrapper {
@@ -244,6 +259,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  z-index: 100;
 }
 
 .our-friends__item {
