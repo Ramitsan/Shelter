@@ -659,7 +659,7 @@ page-footer__wrapper {
   }
   .about__right-block {
     order: 1;
-    /* margin-left: -6px; */
+    margin-left: 0px;
   }
   .about__text {
     width: 432px;
@@ -674,7 +674,7 @@ page-footer__wrapper {
   .our-friends__list {
     width: 580px;
     overflow-x: hidden;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
   }
   .our-friends__item {
     margin-right: 40px;
