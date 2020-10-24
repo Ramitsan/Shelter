@@ -84,6 +84,7 @@
     padding-bottom: 76px;
   }
   .our-friends__list--inner {
+    width: 708px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -104,5 +105,44 @@
   }
   .pagination {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo__info--inner {
+    padding-left: 0px;
+    margin-top: 9px;
+  }
+  .main-nav__toggle--inner::before {
+    top: 0px;
+    background-image: url("../../assets/icons/burger-menu-mobile-inner.png");
+  }
+  .our-friends--inner {
+    padding-bottom: 41px;
+  }
+  .our-friends__title--inner {
+    padding-bottom: 43px;
+  }
+  .our-friends__list--inner {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .our-friends__item--inner {
+    margin-left: 0;
+  }
+  .our-friends__item--inner:nth-child(2) {
+    display: block;
+  }
+  .our-friends__item--inner:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .our-friends__item--inner:nth-child(4),
+  .our-friends__item--inner:nth-child(5),
+  .our-friends__item--inner:nth-child(6) {
+    display: none;
+  }
+  .pagination {
+    width: 300px;
   }
 }

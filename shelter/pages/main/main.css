@@ -6,6 +6,7 @@
 }
 
 body {
+  min-width: 320px;
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
@@ -937,7 +938,7 @@ page-footer__wrapper {
   }
   .donation {
     padding-top: 15px;
-    padding-bottom: 34px;
+    padding-bottom: 33px;
   }
   .donation__wrapper picture {
     margin-right: -3px;
@@ -1007,6 +1008,6 @@ page-footer__wrapper {
     left: 0;
   }
   .page-footer__puppy {
-    margin-top: 45px;
+    margin-top: 46px;
   }
 }

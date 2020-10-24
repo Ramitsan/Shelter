@@ -19,6 +19,11 @@
       </div>
       <h1 class="visually-hidden">Cozy House</h1>
       <nav class="page-header__nav main-nav main-nav--inner">
+        <div class="page-header__toggle page-header__toggle--inner">
+          <button class="btn page-header__btn main-nav__toggle main-nav__toggle--inner" type="button">
+			  <span class="visually-hidden">Открыть меню</span>
+			</button>
+        </div>
         <ul class="main-nav__list main-nav__list--inner">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--inner" href="../main/main.html">About the shelter</a>
@@ -107,7 +112,10 @@
         <a class="page-footer__link page-footer__link--boston" href="https://goo.gl/maps/ExmY4Qxb1jj3XvJt8" target="_blank">1 Central Street, Boston (entrance from the store)</a>
         <a class="page-footer__link page-footer__link--london" href="https://goo.gl/maps/2QhapQnpLx5Kf5Pk9" target="_blank">18 South Park, London </a>
       </div>
-      <img class="page-footer__puppy" src="../../assets/images/footer-puppy.png" width="300" height="315" alt="little puppy">
+      <picture>
+        <source media="(max-width: 767px)" srcset="../../assets/images/footer-puppy-mobile.png">
+        <img class="page-footer__puppy" src="../../assets/images/footer-puppy.png" alt="little puppy">
+      </picture>
     </div>
   </footer>
 
