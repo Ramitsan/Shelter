@@ -18,26 +18,26 @@
           <p class="logo__info">Shelter for pets in Boston</p>
         </div>
         <h1 class="visually-hidden">Cozy House</h1>
-        <nav class="page-header__nav main-nav">
-          <div class="page-header__toggle">
-            <button class="btn page-header__btn main-nav__toggle" type="button">
-			  <span class="visually-hidden">Открыть меню</span>
+        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+          <button class="btn main-nav__toggle" type="button">
+				<span class="visually-hidden">Открыть меню</span>
 			</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active" href="#">About the shelter</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="../pets/pets.html">Our pets</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--inactive" href="#">Help the shelter</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--inactive" href="#">Contacts </a>
+              </li>
+            </ul>
           </div>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="#">About the shelter</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="../pets/pets.html">Our pets</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--inactive" href="#">Help the shelter</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--inactive" href="#">Contacts </a>
-            </li>
-          </ul>
         </nav>
       </div>
     </header>
@@ -215,7 +215,7 @@
 
     </div>
   </footer>
-
+  <script src="main.js"></script>
 </body>
 
 </html>
