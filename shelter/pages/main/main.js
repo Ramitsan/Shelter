@@ -23,7 +23,9 @@ function openMenu() {
   mainNav.classList.remove('main-nav--closed');
   mainNav.classList.add('main-nav--opened');
   logo.style.opacity = '0';
-  document.body.style.overflow = 'hidden';
+  mainNavToggle.style.transform = 'rotate(90deg)';
+  mainNavToggle.style.transition = 'all .3s ease-out';
+  document.body.style.overflowY = 'hidden';
   createOverlay();
 }
 
@@ -31,7 +33,8 @@ function closeMenu() {
   mainNav.classList.add('main-nav--closed');
   mainNav.classList.remove('main-nav--opened');
   logo.style.opacity = '1';
-  document.body.style.overflow = 'visible';
+  mainNavToggle.style.transform = 'rotate(180deg)';
+  document.body.style.overflowY = 'visible';
   removeOverlay();
 }
 
@@ -49,7 +52,7 @@ function createOverlay() {
   overlayElement.style.right = 0;
   overlayElement.style.top = 0;
   overlayElement.style.bottom = 0;
-  overlayElement.style.zIndex = 999;
+  overlayElement.style.zIndex = '999';
   overlayElement.style.display = 'flex';
   return overlayElement;
 }
