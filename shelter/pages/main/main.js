@@ -5,13 +5,14 @@ const mainNavToggle = document.querySelector('.main-nav__toggle');
 const logo = document.querySelector('.page-header__logo');
 let overlay;
 let mainNnavLinkActive = document.querySelector('.main-nav__link--active');
+const header = document.querySelector('header');
 
 
 function toggleMenuMobile() {
   if (mainNav.classList.contains('main-nav--closed')) {
     openMenu();
     overlay = createOverlay();
-    document.body.appendChild(overlay);
+    header.appendChild(overlay);
   } else {
     closeMenu();
 
