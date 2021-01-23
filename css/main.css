@@ -334,11 +334,11 @@ h2 {
 }
 
 .our-friends__button--left {
-  background-image: url("../../assets/icons/arrow-left.png");
+  background-image: url("../assets/icons/arrow-left.png");
 }
 
 .our-friends__button--right {
-  background-image: url("../../assets/icons/arrow-right.png");
+  background-image: url("../assets/icons/arrow-right.png");
 }
 
 .help {
@@ -475,7 +475,7 @@ h2 {
   left: 15px;
   width: 30px;
   height: 23px;
-  background-image: url("../../assets/icons/credit-card.png");
+  background-image: url("../assets/icons/credit-card.png");
 }
 
 .donation__text {
@@ -549,7 +549,7 @@ page-footer__wrapper {
   left: 0px;
   width: 40px;
   height: 32px;
-  background-image: url("../../assets/icons/icon-email.png");
+  background-image: url("../assets/icons/icon-email.png");
 }
 
 .page-footer__link--phone::before {
@@ -559,7 +559,7 @@ page-footer__wrapper {
   left: 0px;
   width: 40px;
   height: 32px;
-  background-image: url("../../assets/icons/icon-phone.png");
+  background-image: url("../assets/icons/icon-phone.png");
 }
 
 .page-footer__visit {
@@ -585,7 +585,7 @@ page-footer__wrapper {
   left: 0px;
   width: 22px;
   height: 32px;
-  background-image: url("../../assets/icons/icon-marker.png");
+  background-image: url("../assets/icons/icon-marker.png");
   background-repeat: no-repeat;
 }
 
@@ -808,7 +808,7 @@ page-footer__wrapper {
   .main-nav--opened::before {
     content: "";
     position: absolute;
-    background-image: url("../../assets/images/logo-mobile-menu.png");
+    background-image: url("../assets/images/logo-mobile-menu.png");
     background-repeat: no-repeat;
     top: 30px;
     left: 10px;
@@ -832,7 +832,7 @@ page-footer__wrapper {
   .main-nav__toggle::before {
     content: "";
     position: absolute;
-    background-image: url("../../assets/icons/burger-menu-mobile.png");
+    background-image: url("../assets/icons/burger-menu-mobile.png");
     background-repeat: no-repeat;
     top: 5px;
     left: 7px;
