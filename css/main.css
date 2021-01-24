@@ -795,15 +795,17 @@ page-footer__wrapper {
     margin: 0px;
     background-color: #292929;
   }
-  .main-nav--opened {
-    position: fixed;
-    transform: translateX(0%);
-    transition: all .9s ease-out;
-  }
   .main-nav--closed {
     position: fixed;
+    right: -500px;
     transform: translateX(100%);
-    transition: all .9s ease-out;
+    transition: all .7s ease-out;
+  }
+  .main-nav--opened {
+    position: fixed;
+    right: 0;
+    transform: translateX(0%);
+    transition: all .7s ease-out;
   }
   .main-nav--opened::before {
     content: "";
