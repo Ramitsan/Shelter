@@ -948,8 +948,9 @@ h2 {
   }
   .help__list {
     padding: 0 5px;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 0px;
+    column-gap: 30px;
   }
   .help__item {
     width: 130px;
